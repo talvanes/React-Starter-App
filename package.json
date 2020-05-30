@@ -1,0 +1,17 @@
+{
+  "name": "react-starter-app",
+  "version": "0.1.0",
+  "description": "Starter React app w/ Babel and Webpack",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "babel",
+    "webpack",
+    "starter"
+  ],
+  "author": "Talvanes Ferreira de Sousa",
+  "license": "ISC"
+}
