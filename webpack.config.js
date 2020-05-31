@@ -7,18 +7,27 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx)$/i,
                 exclude: /(node_modules|bower_components)/,
                 loader: "babel-loader",
                 options: { presets: ["@babel/env"] }
             },
             {
-                test: /\.css$/,
+                test: /\.css$/i,
                 use: ["style-loader", "css-loader"]
             },
             {
-                test: /\.(png|jp?g|gif)$/i,
-                use: ["file-loader"]
+                test: /\.(png|jpe?g|gif|tiff?|svg|webp)$/i,
+                loader: "url-loader",
+                options: { limit: 8192 }
+            },
+            {
+                test: /\.(ogg|mp3|wav|mpe?g)$/i,
+                loader: "file-loader"
+            },
+            {
+                test: /\.(avi|mov|mp4|wmv|webm)$/i,
+                loader: "file-loader"
             }
         ]
     },
