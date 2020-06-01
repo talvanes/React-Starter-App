@@ -17,7 +17,7 @@ module.exports = {
                 use: ["style-loader", "css-loader"]
             },
             {
-                test: /\.(png|jpe?g|gif|tiff?|svg|webp)$/i,
+                test: /\.(png|jpe?g|gif|svg|webp)$/i,
                 loader: "url-loader",
                 options: { limit: 8192 }
             },
@@ -26,7 +26,7 @@ module.exports = {
                 loader: "file-loader"
             },
             {
-                test: /\.(avi|mov|mp4|wmv|webm)$/i,
+                test: /\.(avi|mp4|wmv|webm)$/i,
                 loader: "file-loader"
             }
         ]

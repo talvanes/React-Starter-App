@@ -2,7 +2,7 @@
   "name": "react-starter-app",
   "version": "0.1.0",
   "description": "Starter React app w/ Babel and Webpack",
-  "main": "index.html",
+  "main": "src/index.html",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
