@@ -1,22 +1,24 @@
+import h from "react-hyperscript";
+const {div, h1, img, audio, video} = require("hyperscript-helpers")(h);
+
 import React, { Component } from "react";
 import { hot } from "react-hot-loader";
 import "./App.css";
-import h from "react-hyperscript";
 
-import img from './assets/images/image.png';
-import svg from './assets/images/image.svg';
-import audio from './assets/audios/audio.mp3';
-import video from './assets/videos/video.mp4';
+import pngImage from './assets/images/image.png';
+import svgImage from './assets/images/image.svg';
+import mp3Audio from './assets/audios/audio.mp3';
+import mp4Video from './assets/videos/video.mp4';
 
 
 class App extends Component {
     render() {
-        return h('div', {className: 'App'}, [
-            h('h1', "Hello, World!"),
-            h('img', { src: img, alt: "React Starter", title: "React Starter", height: 500 }),
-            h('img', { src: svg, alt: "React Starter", title: "React Starter", height: 500 }),
-            h('audio', { src: audio, controls: true }),
-            h('video', { src: video, controls: true })
+        return div({className: 'App'}, [
+            h1("Hello, World!"),
+            img({ src: pngImage, alt: "React Starter", title: "React Starter", height: 500 }),
+            img({ src: svgImage, alt: "React Starter", title: "React Starter", height: 500 }),
+            audio({ src: mp3Audio, controls: true }),
+            video({ src: mp4Video, controls: true })
         ]);
     }
 }
