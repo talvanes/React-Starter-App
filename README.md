@@ -47,6 +47,21 @@ By default, this project supports the most common formats thanks to Webpack's lo
 
 Babel can also be configured, too. For instance, you could add [TypeScript support](https://babeljs.io/docs/en/babel-plugin-transform-typescript) or ever. Head for https://babeljs.io/docs/en/plugins/ for more information.
 
+## Alternatives
+
+If you don't feel like writing JSX's HTML-tag style in your React code, there's [an alternative way that you can try](https://github.com/mlmorg/react-hyperscript). Checkout to branch ``react-hyperscript`` to "play with it":
+
+````
+git checkout react-hyperscript
+````
+
+Or create your own branch to find it out:
+````
+git checkout react-hyperscript <branch_name>
+````
+
+If you want, it supports [a vanilla Javascript implementation](https://github.com/hyperhype/hyperscript) as well, specially if you aren't using React.
+
 ## Support
 
 Contact me at talvanes_sousa@hotmail.com, talvanes.ferreira.sousa@gmail.com or talvanes@zoho.com for better support, or if you're having some kind of trouble.
